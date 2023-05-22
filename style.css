@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.gallery {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.galleryImg {
+    width: 100vw;
+    display: flex;
+    transition-property: transform;
+}
+
+.galleryImg > img{
+    width: 100vw;
+}
+
+.menu {
+    display: flex;
+    gap: 5px;
+    width: 600px;
+    height: 100px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: 6px solid green;
+    overflow: scroll hidden;
+    background-color: green;
+}
+
+.menuImg {
+    height: 100px;
+    width: 300px;
+    width: auto;
+    transition: transform 0.3s;
+    object-fit: cover;
+    }
+
+a {
+    display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+a > img:hover {
+    transform: scale(1.1); 
+}
+
+@media (max-width: 700px) {
+    
+    .menu {
+        width: 100vw;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+
+
